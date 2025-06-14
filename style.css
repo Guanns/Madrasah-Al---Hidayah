@@ -199,7 +199,8 @@ nav .fa {
   margin-bottom: 12px;
 }
 
-.info-card-content p, .info-card-content ol {
+.info-card-content p,
+.info-card-content ol {
   color: #34495e;
   line-height: 1.7;
   text-align: justify;
@@ -369,10 +370,10 @@ nav .fa {
 }
 
 .btn-modern.whatsapp {
-  background: #25D366;
+  background: #25d366;
 }
 .btn-modern.whatsapp:hover {
-  background: #1DAA53;
+  background: #1daa53;
 }
 
 .info-telepon-modern {
@@ -419,7 +420,7 @@ nav .fa {
 }
 
 .footer-col h4::after {
-  content: '';
+  content: "";
   width: 50px;
   height: 3px;
   background: #0c9444;
@@ -435,10 +436,23 @@ nav .fa {
   padding: 0;
 }
 
-.footer .footer-col p .fa {
-  width: 20px;
-  margin-right: 10px;
-  color: #bdc3c7;
+.footer .kontak-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.footer .kontak-info .fa {
+  margin-right: 15px;
+  margin-top: 4px;
+  width: 18px;
+  text-align: center;
+}
+
+.footer .kontak-info span {
+  flex: 1;
 }
 
 .footer ul {
@@ -495,9 +509,9 @@ nav .fa {
   color: #7f8c8d;
 }
 
-@media(max-width: 768px){
+@media (max-width: 768px) {
   .text-box h1 {
-    font-size: 28px;
+    font-size: 38px;
   }
   .nav-links ul li {
     display: block;
@@ -524,44 +538,73 @@ nav .fa {
     padding: 30px;
   }
   .section-header {
-    padding: 0 5%;
+    padding: 0 8%;
   }
   .info-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px 25px;
   }
   .info-card-icon {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  .info-card-content p, .info-card-content ol {
+  .info-card-content p,
+  .info-card-content ol {
     text-align: center;
   }
   .program-wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
   .program-card {
     flex-basis: 100%;
     width: 90%;
-    max-width: 350px;
+    max-width: 380px;
   }
   .kontak-card {
     width: 90%;
-    padding: 30px 20px;
   }
-  .keunggulan-wrapper, .tombol-wrapper {
+  .keunggulan-wrapper {
     flex-direction: column;
+    gap: 25px;
   }
-  .keunggulan-item {
-    margin-bottom: 20px;
+  .tombol-wrapper {
+    flex-direction: column;
+    gap: 15px;
   }
   .footer-content {
     flex-direction: column;
   }
   .footer-col {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h1 {
+    font-size: 28px;
+  }
+  .section-header h2 {
+    font-size: 26px;
+  }
+  .section-header p {
+    font-size: 15px;
+  }
+  .kontak-card,
+  .info-card {
+    padding: 30px 20px;
+  }
+  .info-card-content h3 {
+    font-size: 20px;
+  }
+  .program-content,
+  .keunggulan-item {
+    padding: 20px;
+  }
+  .btn-modern {
+    padding: 12px 24px;
+    font-size: 15px;
   }
 }
