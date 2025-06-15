@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madrasah Al - Hidayah</title>
+    <title>Madrasah Al - Hidayah | Unggul & Berkarakter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -17,204 +16,232 @@
 
 <body>
     <div class="page-wrapper">
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="Assets/logo.png" alt=""></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="#">BERANDA</a></li>
-                        <li><a href="#tentang">TENTANG</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#kontak">KONTAK KAMI</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
-            <div class="text-box">
-                <h1>Madrasah Al - Hidayah</h1>
-                <p>Selamat datang di Madrasah Al - Hidayah, tempat kami mendedikasikan diri untuk mencetak generasi
-                    Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman. Kami memadukan pendidikan
-                    agama yang mendalam dengan ilmu pengetahuan modern untuk membentuk pribadi yang unggul di dunia dan
-                    akhirat.</p>
-                <a href="" class="hero-btn">Lihat Kegiatan Kami</a>
-            </div>
-        </section>
 
-        <section class="page-section" id="tentang">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Visi, Tujuan, dan Misi</h2>
-                <p>Landasan dan arah gerak perjuangan pendidikan di Madrasah Al-Hidayah.</p>
+        <nav id="navbar">
+            <a href="#beranda" class="logo-link"><img src="Assets/logo.png" alt="Logo Madrasah Al-Hidayah"></a>
+            <div class="nav-right">
+                <label class="dark-mode-switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+                <i class="fa fa-bars" id="menuShowBtn"></i>
             </div>
-            <div class="info-card-wrapper">
-                <div class="info-card" data-aos="fade-right" data-aos-delay="200">
-                    <div class="info-card-icon"><i class="fa fa-eye"></i></div>
-                    <div class="info-card-content">
-                        <h3>VISI</h3>
-                        <p>Menjadi madrasah unggul di bidang akademik dan non-akademik, berakhlakul karimah, berdasarkan
-                            iman dan takwa.</p>
-                    </div>
-                </div>
-                <div class="info-card" data-aos="fade-left" data-aos-delay="300">
-                    <div class="info-card-icon"><i class="fa fa-bullseye"></i></div>
-                    <div class="info-card-content">
-                        <h3>TUJUAN</h3>
-                        <p>Mewujudkan insan yang unggul dan berkualitas di bidang akademik serta non-akademik, dan
-                            berakhlakul karimah.</p>
-                    </div>
-                </div>
-                <div class="info-card" data-aos="fade-right" data-aos-delay="400">
-                    <div class="info-card-icon"><i class="fa fa-list-ul"></i></div>
-                    <div class="info-card-content">
-                        <h3>MISI</h3>
-                        <ol>
-                            <li>Membangun budaya toleransi dan cinta lingkungan.</li>
-                            <li>Membangun kreativitas peserta didik sesuai dengan bakat dan minatnya.</li>
-                            <li>Melaksanakan pengembangan sarana, prasarana, dan media pembelajaran.</li>
-                            <li>Mengembangkan pembelajaran berkualitas yang berbasis pendidikan karakter.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </nav>
 
-        <section class="page-section alternate-bg">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Program Unggulan Kami</h2>
-                <p>Membentuk siswa berprestasi dan berkarakter melalui kegiatan yang terarah dan menyenangkan.</p>
-            </div>
-            <div class="program-wrapper" data-aos="fade-up" data-aos-delay="200">
-                <div class="program-card">
-                    <img src="Asset/program_tahfidz.png" alt="Program Tahfidz">
-                    <div class="program-content">
-                        <h3>Tahfidz Al-Qur'an</h3>
-                        <p>Program intensif menghafal Al-Qur'an dengan metode yang mudah dan bimbingan dari ustadz yang
-                            profesional.</p>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <img src="Asset/program_bahasa.png" alt="Program Muhadhoroh">
-                    <div class="program-content">
-                        <h3>Muhadhoroh</h3>
-                        <p>Mengasah kemampuan berbicara di depan umum (public speaking) dalam dua bahasa: Indonesia,
-                            Arab.</p>
-                    </div>
-                </div>
-                <div class="program-card">
-                    <img src="Asset/program_sains.png" alt="Program Pramuka">
-                    <div class="program-content">
-                        <h3>Pramuka</h3>
-                        <p>Membentuk karakter kepemimpinan, kemandirian, dan cinta tanah air melalui kegiatan kepanduan
-                            yang seru.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="nav-links-fullscreen" id="navLinks">
+            <i class="fa fa-times" id="menuHideBtn"></i>
+            <ul>
+                <li><a href="#beranda">BERANDA</a></li>
+                <li><a href="#tentang">TENTANG</a></li>
+                <li><a href="#program">PROGRAM</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#kontak">KONTAK</a></li>
+            </ul>
+        </div>
 
-        <section class="info-kontak-modern" id="kontak">
-            <div class="kontak-card" data-aos="fade-up" data-aos-duration="1000">
-                <div class="kontak-header">
-                    <h2>Mengapa Harus Memilih Madrasah Al-Hidayah?</h2>
-                    <p>Kami mendedikasikan diri untuk menciptakan lingkungan pendidikan yang inspiratif dan berkarakter.
-                    </p>
+        <main>
+            <section class="header" id="beranda">
+                <div class="text-box">
+                    <h1>Madrasah Al - Hidayah</h1>
+                    <p>Mencetak generasi Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman
+                        melalui pendidikan Islam yang modern dan komprehensif.</p>
+                    <a href="#program" class="hero-btn">Jelajahi Program Kami</a>
                 </div>
-                <div class="keunggulan-wrapper">
-                    <div class="keunggulan-item">
-                        <i class="fa fa-book"></i>
-                        <h4>Kurikulum Modern</h4>
-                        <p>Perpaduan seimbang antara ilmu agama dan pengetahuan umum terkini.</p>
+            </section>
+
+            <section class="page-section" id="tentang">
+                <div class="section-header">
+                    <h2>Visi, Tujuan, dan Misi</h2>
+                    <p>Landasan dan arah gerak perjuangan pendidikan di Madrasah Al-Hidayah.</p>
+                </div>
+                <div class="info-card-wrapper">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa fa-eye"></i></div>
+                        <div class="info-card-content">
+                            <h3>VISI</h3>
+                            <p>Menjadi madrasah unggul di bidang akademik dan non-akademik, berakhlakul karimah,
+                                berdasarkan iman dan takwa.</p>
+                        </div>
                     </div>
-                    <div class="keunggulan-item">
-                        <i class="fa fa-users"></i>
-                        <h4>Pendidik Profesional</h4>
-                        <p>Dibimbing oleh guru-guru berpengalaman dan berdedikasi tinggi.</p>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa fa-bullseye"></i></div>
+                        <div class="info-card-content">
+                            <h3>TUJUAN</h3>
+                            <p>Mewujudkan insan yang unggul dan berkualitas di bidang akademik serta non-akademik, dan
+                                berakhlakul karimah.</p>
+                        </div>
                     </div>
-                    <div class="keunggulan-item">
-                        <i class="fa fa-shield"></i>
-                        <h4>Lingkungan Aman</h4>
-                        <p>Fasilitas yang aman dan suasana Islami yang mendukung perkembangan siswa.</p>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa fa-list-ul"></i></div>
+                        <div class="info-card-content">
+                            <h3>MISI</h3>
+                            <ol>
+                                <li>Membangun budaya toleransi dan cinta lingkungan.</li>
+                                <li>Mengembangkan kreativitas peserta didik sesuai bakat dan minatnya.</li>
+                                <li>Mengembangkan pembelajaran berkualitas berbasis pendidikan karakter.</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
-                <hr class="kontak-divider">
-                <div class="kontak-aksi">
-                    <h3>Hubungi Kami</h3>
+            </section>
+
+            <section class="stats-section" id="statistik">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="105">0</h3>
+                    <p>Siswa Aktif</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>Tenaga Pendidik</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p>Program Unggulan</p>
+                </div>
+            </section>
+
+            <section class="page-section alternate-bg" id="program">
+                <div class="section-header">
+                    <h2>Program Unggulan Kami</h2>
+                    <p>Membentuk siswa berprestasi dan berkarakter melalui kegiatan yang terarah dan menyenangkan.</p>
+                </div>
+                <div class="program-wrapper">
+                    <div class="program-card">
+                        <img src="Assets/program_tahfidz.png" alt="Program Tahfidz">
+                        <div class="program-content">
+                            <h3>Tahfidz Al-Qur'an</h3>
+                            <p>Program intensif menghafal Al-Qur'an dengan metode yang mudah dan bimbingan dari
+                                Ustadz profesional.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <img src="Assets/program_bahasa.png" alt="Program Muhadhoroh">
+                        <div class="program-content">
+                            <h3>Muhadhoroh</h3>
+                            <p>Mengasah kemampuan berbicara di depan umum dalam tiga bahasa: Indonesia, Arab.</p>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <img src="Assets/program_sains.png" alt="Program Pramuka">
+                        <div class="program-content">
+                            <h3>Pramuka</h3>
+                            <p>Membentuk karakter kepemimpinan, kemandirian, dan cinta tanah air melalui kegiatan
+                                kepanduan.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section" id="faq">
+                <div class="section-header">
+                    <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                    <p>Temukan jawaban cepat untuk pertanyaan umum mengenai pendaftaran, dan kegiatan di
+                        Madrasah Al-Hidayah.</p>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Kapan pendaftaran siswa baru dibuka?</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apa saja persyaratan untuk mendaftar?</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Kurikulum apa yang digunakan?</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-kontak-modern" id="kontak">
+                <div class="kontak-card">
+                    <div class="kontak-header">
+                        <h2>Ambil Langkah Selanjutnya</h2>
+                        <p>Kami siap membantu Anda untuk menjadi bagian dari keluarga besar Madrasah Al-Hidayah.</p>
+                    </div>
+                    <hr class="kontak-divider">
                     <div class="tombol-wrapper">
-                        <a href="Asset/brosur-madrasah.pdf" class="btn-modern download" download>
-                            <i class="fa fa-download"></i> Download Brosur
-                        </a>
+                        <a href="Assets/brosur-madrasah.pdf" class="btn-modern download" download><i
+                                class="fa fa-download"></i> Download Brosur</a>
                         <a href="https://wa.me/628999699953?text=Assalamualaikum, saya ingin bertanya tentang pendaftaran di Madrasah Al-Hidayah."
-                            class="btn-modern whatsapp" target="_blank">
-                            <i class="fa fa-whatsapp"></i> Hubungi via WhatsApp
-                        </a>
-                    </div>
-                    <div class="info-telepon-modern">
-                        <p>Atau hubungi admin di <strong>+62 899-9699-953</strong> (08:00 Pagi - 13:00 Siang)</p>
+                            class="btn-modern whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Hubungi via
+                            WhatsApp</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-col about">
-                    <h4>Tentang Al-Hidayah</h4>
-                    <p>Madrasah Al-Hidayah adalah lembaga pendidikan Islam yang berdedikasi untuk mencetak generasi
-                        Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-col about">
+                        <h4>Tentang Al-Hidayah</h4>
+                        <p>Lembaga pendidikan Islam yang berdedikasi untuk mencetak generasi Qur'ani yang cerdas,
+                            berakhlak mulia, dan siap menghadapi tantangan zaman.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Navigasi</h4>
+                        <ul>
+                            <li><a href="#beranda">Beranda</a></li>
+                            <li><a href="#tentang">Tentang</a></li>
+                            <li><a href="#program">Program</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#kontak">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Hubungi Kami</h4>
+                        <p class="kontak-info">
+                            <i class="fa fa-map-marker"></i>
+                            <span>Jl. Jatibening 2 Rt.001/012 No.001 Kel. Pondok Kelapa, Kec. Duren Sawit, Jakarta
+                                Timur. 13450</span>
+                        </p>
+                        <p class="kontak-info">
+                            <i class="fa fa-phone"></i>
+                            <span>+62 899-9699-953 (Ibu Sumiyati)</span>
+                        </p>
+                        <p class="kontak-info">
+                            <i class="fa fa-envelope"></i>
+                            <span>mtssalhidayah@madrasah.id</span>
+                        </p>
+                        <p class="kontak-info">
+                            <i class="fa fa-envelope"></i>
+                            <span>masalhidayahds@gmail.com</span>
+                        </p>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Link Cepat</h4>
-                    <ul>
-                        <li><a href="#">BERANDA</a></li>
-                        <li><a href="#tentang">TENTANG</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#kontak">KONTAK KAMI</a></li>
-                    </ul>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Deserves.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Hubungi Kami</h4>
-                    <p class="kontak-info">
-                        <i class="fa fa-map-marker"></i>
-                        <span>Jl. Jatibening 2 Rt.001/012 No.001 Kel. Pondok Kelapa, Kec. Duren Sawit, Jakarta Timur.
-                            13450</span>
-                    </p>
-                    <p class="kontak-info">
-                        <i class="fa fa-phone"></i>
-                        <span>+62 899-9699-953 (Ibu Sumiyati)</span>
-                    </p>
-                    <p class="kontak-info">
-                        <i class="fa fa-envelope"></i>
-                        <span>masalhidayahds@gmail.com</span>
-                    </p>
-                    <p class="kontak-info">
-                        <i class="fa fa-envelope"></i>
-                        <span>mtssalhidayah@madrasah.id</span>
-                    </p>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Reserved.</p>
-            </div>
-        </footer>
+            </footer>
+        </main>
     </div>
-    <script>
-        var nav2Links = document.getElementById("navLinks");
-        function showMenu() {
-            nav2Links.style.right = "0";
-        }
-        function hideMenu() {
-            nav2Links.style.right = "-200px";
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000 });
-    </script>
+
+    <button id="backToTopBtn" title="Kembali ke atas"><i class="fa fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
