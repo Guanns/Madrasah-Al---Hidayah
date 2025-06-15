@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (section) activeLinkObserver.observe(section);
     });
 
-    // --- LOGIKA ANIMASI GSAP (DIPERBAIKI) ---
+    // GSAP
 
     const mainTitle = document.querySelector('.text-box h1');
     if (mainTitle) {
@@ -113,8 +113,6 @@ document.addEventListener("DOMContentLoaded", function() {
         autoAlpha: 0,
         ease: "power3.out"
     });
-    
-    // BLOK ANIMASI .hero-btn DIHAPUS DARI SINI UNTUK MEMASTIKAN TOMBOL MUNCUL
     
     gsap.utils.toArray('.section-header, .info-card, .program-card, .kontak-card, .stat-item, .faq-accordion').forEach(elem => {
         gsap.from(elem, {
