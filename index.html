@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Madrasah Al - Hidayah | Unggul & Berkarakter</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,25 +32,28 @@
 
         <div class="nav-links-fullscreen" id="navLinks">
             <i class="fa fa-times" id="menuHideBtn"></i>
-            <ul>
-                <li><a href="#beranda">BERANDA</a></li>
-                <li><a href="#tentang">TENTANG</a></li>
-                <li><a href="#program">PROGRAM</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#kontak">KONTAK</a></li>
-            </ul>
+            <div class="mobile-menu-container">
+                <ul>
+                    <li><a href="#beranda">BERANDA</a></li>
+                    <li><a href="#tentang">TENTANG</a></li>
+                    <li><a href="#program">PROGRAM</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#kontak">KONTAK</a></li>
+                </ul>
+            </div>
         </div>
-
         <main>
             <section class="header" id="beranda">
                 <div class="text-box">
                     <h1>Madrasah Al - Hidayah</h1>
-                    <p>Mencetak generasi Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman
-                        melalui pendidikan Islam yang modern dan komprehensif.</p>
-                    <a href="#program" class="hero-btn">Jelajahi Program Kami</a>
+                    <p>Mencetak generasi Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman melalui pendidikan Islam yang modern dan komprehensif.</p>
+                    <div class="hero-btn-wrapper">
+                        <a href="#program" class="hero-btn">Jelajahi Program</a>
+                        <a href="blog.html" class="hero-btn">Lihat Berita Terbaru</a>
+                    </div>
                 </div>
             </section>
-
             <section class="page-section" id="tentang">
                 <div class="section-header">
                     <h2>Visi, Tujuan, dan Misi</h2>
@@ -56,23 +61,21 @@
                 </div>
                 <div class="info-card-wrapper">
                     <div class="info-card">
-                        <div class="info-card-icon"><i class="fa fa-eye"></i></div>
+                        <div class="info-card-icon"><i class="fa fa-binoculars"></i></div>
                         <div class="info-card-content">
                             <h3>VISI</h3>
-                            <p>Menjadi madrasah unggul di bidang akademik dan non-akademik, berakhlakul karimah,
-                                berdasarkan iman dan takwa.</p>
+                            <p>Menjadi madrasah unggul di bidang akademik dan non-akademik, berakhlakul karimah, berdasarkan iman dan takwa.</p>
                         </div>
                     </div>
                     <div class="info-card">
-                        <div class="info-card-icon"><i class="fa fa-bullseye"></i></div>
+                        <div class="info-card-icon"><i class="fa fa-check-circle-o"></i></div>
                         <div class="info-card-content">
                             <h3>TUJUAN</h3>
-                            <p>Mewujudkan insan yang unggul dan berkualitas di bidang akademik serta non-akademik, dan
-                                berakhlakul karimah.</p>
+                            <p>Mewujudkan insan yang unggul dan berkualitas di bidang akademik serta non-akademik, dan berakhlakul karimah.</p>
                         </div>
                     </div>
                     <div class="info-card">
-                        <div class="info-card-icon"><i class="fa fa-list-ul"></i></div>
+                        <div class="info-card-icon"><i class="fa fa-rocket"></i></div>
                         <div class="info-card-content">
                             <h3>MISI</h3>
                             <ol>
@@ -84,7 +87,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="stats-section" id="statistik">
                 <div class="stat-item">
                     <h3 class="stat-number" data-target="105">0</h3>
@@ -99,7 +101,6 @@
                     <p>Program Unggulan</p>
                 </div>
             </section>
-
             <section class="page-section alternate-bg" id="program">
                 <div class="section-header">
                     <h2>Program Unggulan Kami</h2>
@@ -110,8 +111,7 @@
                         <img src="Assets/program_tahfidz.png" alt="Program Tahfidz">
                         <div class="program-content">
                             <h3>Tahfidz Al-Qur'an</h3>
-                            <p>Program intensif menghafal Al-Qur'an dengan metode yang mudah dan bimbingan dari
-                                Ustadz profesional.</p>
+                            <p>Program intensif menghafal Al-Qur'an dengan metode yang mudah dan bimbingan dari Ustadz profesional.</p>
                         </div>
                     </div>
                     <div class="program-card">
@@ -125,18 +125,19 @@
                         <img src="Assets/program_sains.png" alt="Program Pramuka">
                         <div class="program-content">
                             <h3>Pramuka</h3>
-                            <p>Membentuk karakter kepemimpinan, kemandirian, dan cinta tanah air melalui kegiatan
-                                kepanduan.</p>
+                            <p>Membentuk karakter kepemimpinan, kemandirian, dan cinta tanah air melalui kegiatan kepanduan.</p>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section class="page-section" id="faq">
                 <div class="section-header">
                     <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
-                    <p>Temukan jawaban cepat untuk pertanyaan umum mengenai pendaftaran, dan kegiatan di
-                        Madrasah Al-Hidayah.</p>
+                    <p>Temukan jawaban cepat untuk pertanyaan umum mengenai pendaftaran, dan kegiatan di Madrasah Al-Hidayah.</p>
+                </div>
+                <div class="faq-search-container">
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="faqSearchInput" placeholder="Klik Untuk Cari Pertanyaan">
                 </div>
                 <div class="faq-accordion">
                     <div class="faq-item">
@@ -168,7 +169,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="info-kontak-modern" id="kontak">
                 <div class="kontak-card">
                     <div class="kontak-header">
@@ -177,66 +177,62 @@
                     </div>
                     <hr class="kontak-divider">
                     <div class="tombol-wrapper">
-                        <a href="Assets/brosur-madrasah.pdf" class="btn-modern download" download><i
-                                class="fa fa-download"></i> Download Brosur</a>
-                        <a href="https://wa.me/628999699953?text=Assalamualaikum, saya ingin bertanya tentang pendaftaran di Madrasah Al-Hidayah."
-                            class="btn-modern whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Hubungi via
-                            WhatsApp</a>
+                        <a href="Assets/brosur-madrasah.pdf" class="btn-modern download" download><i class="fa fa-download"></i> Download Brosur</a>
+                        <a href="https://wa.me/628999699953?text=Assalamualaikum, saya ingin bertanya tentang pendaftaran di Madrasah Al-Hidayah." class="btn-modern whatsapp" target="_blank"><i class="fa fa-whatsapp"></i> Hubungi via WhatsApp</a>
                     </div>
                 </div>
             </section>
-
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-col about">
-                        <h4>Tentang Al-Hidayah</h4>
-                        <p>Lembaga pendidikan Islam yang berdedikasi untuk mencetak generasi Qur'ani yang cerdas,
-                            berakhlak mulia, dan siap menghadapi tantangan zaman.</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Navigasi</h4>
-                        <ul>
-                            <li><a href="#beranda">Beranda</a></li>
-                            <li><a href="#tentang">Tentang</a></li>
-                            <li><a href="#program">Program</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#kontak">Kontak</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Hubungi Kami</h4>
-                        <p class="kontak-info">
-                            <i class="fa fa-map-marker"></i>
-                            <span>Jl. Jatibening 2 Rt.001/012 No.001 Kel. Pondok Kelapa, Kec. Duren Sawit, Jakarta
-                                Timur. 13450</span>
-                        </p>
-                        <p class="kontak-info">
-                            <i class="fa fa-phone"></i>
-                            <span>+62 899-9699-953 (Ibu Sumiyati)</span>
-                        </p>
-                        <p class="kontak-info">
-                            <i class="fa fa-envelope"></i>
-                            <span>mtssalhidayah@madrasah.id</span>
-                        </p>
-                        <p class="kontak-info">
-                            <i class="fa fa-envelope"></i>
-                            <span>masalhidayahds@gmail.com</span>
-                        </p>
+            </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-col about">
+                    <h4>Tentang Al-Hidayah</h4>
+                    <p>Lembaga pendidikan Islam yang berdedikasi untuk mencetak generasi Qur'ani yang cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1652pMAffu/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ma_mts_alhidayah?igsh=MWUweWthcTJ5bmEwZA=="><i class="fa fa-instagram"></i></a>
+                        <a href="https://vt.tiktok.com/ZSrqf8uKX/" aria-label="TikTok" class="social-icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=628999699953&text=Assalamualaikum%2C+saya+ingin+bertanya+tentang+pendaftaran+di+Madrasah+Al-Hidayah.&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Deserves.</p>
+                <div class="footer-col">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#program">Program</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
                 </div>
-            </footer>
-        </main>
-    </div>
-
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <p class="kontak-info">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Jl. Jatibening 2 Rt.001/012 No.001 Kel. Pondok Kelapa, Kec. Duren Sawit, Jakarta Timur. 13450</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-phone"></i>
+                        <span>+62 899-9699-953 (Ibu Sumiyati)</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-envelope"></i>
+                        <span>mtssalhidayah@madrasah.id</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-envelope"></i>
+                        <span>masalhidayahds@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Deserves.</p>
+            </div>
+        </footer>
+        </div>
     <button id="backToTopBtn" title="Kembali ke atas"><i class="fa fa-arrow-up"></i></button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
