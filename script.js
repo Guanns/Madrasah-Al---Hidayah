@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             program: {
                 keywords: ["program", "unggulan"],
-                answer: "Program unggulan kami antara lain Tahfidz Al-Qur'an, Muhadhoroh (latihan pidato 3 bahasa), dan Pramuka yang aktif dan berprestasi."
+                answer: "Program unggulan kami antara lain Tahfidz Al-Qur'an, Muhadhoroh (latihan ceramah 2 bahasa), dan Pramuka yang aktif dan berprestasi."
             },
             ekskul: {
                 keywords: ["ekskul", "ekstrakurikuler"],
