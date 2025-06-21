@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hubungi Madrasah Al-Hidayah melalui formulir kontak online kami untuk pertanyaan seputar pendaftaran, program, atau informasi lainnya.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Formulir Kontak - Madrasah Al-Hidayah</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <nav id="navbar" class="nav-solid">
+            <a href="index.html" class="logo-link"><img src="Assets/logo.png" alt="Logo Madrasah Al-Hidayah"></a>
+            <div class="nav-right">
+                <label class="dark-mode-switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+                <i class="fa fa-bars" id="menuShowBtn"></i>
+            </div>
+        </nav>
+
+        <div class="nav-links-fullscreen" id="navLinks">
+            <i class="fa fa-times" id="menuHideBtn"></i>
+            <div class="mobile-menu-container">
+                <ul>
+                    <li><a href="index.html#beranda">BERANDA</a></li>
+                    <li><a href="index.html#tentang">TENTANG</a></li>
+                    <li><a href="index.html#program">PROGRAM</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="index.html#kontak">KONTAK</a></li>
+                </ul>
+                <hr class="mobile-menu-divider">
+                <div class="mobile-menu-socials">
+                    <p>Ikuti Kami Di Sosial Media</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1652pMAffu/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ma_mts_alhidayah?igsh=MWUweWthcTJ5bmEwZA=="><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="https://vt.tiktok.com/ZSrqf8uKX/" aria-label="TikTok" class="social-icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="page-section alternate-bg" id="kontak-formulir">
+                <div class="article-navigation-top" style="padding-bottom: 40px; text-align: center;">
+                    <a href="index.html#kontak" class="back-to-blog-btn"><i class="fa fa-arrow-left"></i> Kembali ke
+                        Halaman Utama</a>
+                </div>
+
+                <div class="section-header">
+                    <h2>Formulir Pertanyaan</h2>
+                    <p>Silakan isi formulir di bawah ini. Pertanyaan Anda akan langsung dikirim ke WhatsApp Admin kami.
+                    </p>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+
+                        <div class="form-group">
+                            <label>Tujuan Pesan Untuk</label>
+                            <div class="radio-options">
+                                <div class="radio-option">
+                                    <input type="radio" id="tujuan-mts" name="Tujuan" value="MTS" checked>
+                                    <label for="tujuan-mts">MTs (Madrasah Tsanawiyah)</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="tujuan-ma" name="Tujuan" value="MA">
+                                    <label for="tujuan-ma">MA (Madrasah Aliyah)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="Nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" name="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Tema Pertanyaan</label>
+                            <input type="text" id="subject" name="Subjek" required
+                                placeholder="Contoh: Pertanyaan Seputar Pendaftaran">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pertanyaan Anda</label>
+                            <textarea id="message" name="Pesan" rows="6" required
+                                placeholder="Tuliskan pertanyaan Anda di sini.."></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit-form"><i class="fa fa-whatsapp"></i> Kirim via
+                                WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-col about">
+                    <h4>Tentang Al-Hidayah</h4>
+                    <p>Lembaga pendidikan Islam yang berdedikasi untuk mencetak generasi Qur'ani yang cerdas, berakhlak
+                        mulia, dan siap menghadapi tantangan zaman.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1652pMAffu/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ma_mts_alhidayah?igsh=MWUweWthcTJ5bmEwZA=="><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="https://vt.tiktok.com/ZSrqf8uKX/" aria-label="TikTok" class="social-icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="index.html#beranda">Beranda</a></li>
+                        <li><a href="index.html#tentang">Tentang</a></li>
+                        <li><a href="index.html#program">Program</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <p class="kontak-info">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Jl. Jatibening 2 Rt.001/012 No.001 Kel. Pondok Kelapa, Kec. Duren Sawit, Jakarta Timur.
+                            13450</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-phone"></i>
+                        <span>+62 899-9699-953 (Ibu Sumiyati)</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-envelope"></i>
+                        <span>mtssalhidayah@madrasah.id</span>
+                    </p>
+                    <p class="kontak-info">
+                        <i class="fa fa-envelope"></i>
+                        <span>masalhidayahds@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button id="backToTopBtn" title="Kembali ke atas"><i class="fa fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
