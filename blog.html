@@ -5,13 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumpulan berita, artikel, dan informasi terbaru dari Madrasah Al-Hidayah. Ikuti terus kegiatan dan cerita inspiratif dari lingkungan sekolah kami.">
+    
     <title>Blog & Berita - Madrasah Al-Hidayah</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog & Berita Madrasah Al-Hidayah",
+      "url": "URL_WEBSITE_ANDA_NANTI/blog.html",
+      "description": "Ikuti terus informasi terbaru, kegiatan, dan cerita inspiratif dari lingkungan Madrasah Al-Hidayah.",
+      "publisher": {
+        "@type": "School",
+        "name": "Madrasah Al-Hidayah"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -76,7 +93,7 @@
                     <div class="blog-card">
                         <div class="blog-card-image">
                             <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Prestasi"
-                                alt="Karakter Qur'ani">
+                                alt="Ilustrasi tentang Karakter Qur'ani">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-card-category">PEMBENTUKAN KARAKTER</span>
@@ -92,7 +109,7 @@
                     <div class="blog-card">
                         <div class="blog-card-image">
                             <img src="https://via.placeholder.com/400x250/16a085/ffffff?text=Ekskul"
-                                alt="Gambar Artikel Pengembangan Diri">
+                                alt="Ilustrasi tentang Pengembangan Diri melalui Ekstrakurikuler">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-card-category">PENGEMBANGAN DIRI</span>
@@ -108,7 +125,7 @@
                     <div class="blog-card">
                         <div class="blog-card-image">
                             <img src="https://via.placeholder.com/400x250/e67e22/ffffff?text=Tips+Ujian"
-                                alt="Gambar Artikel Tips & Trik">
+                                alt="Ilustrasi tentang Tips & Trik Menghadapi Ujian">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-card-category">TIPS & TRIK</span>
@@ -175,9 +192,40 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Deserves.</p>
+                <p>&copy; 2025 Madrasah Al-Hidayah. All Rights Reserved.</p>
             </div>
         </footer>
+    </div>
+    
+    <button class="chatbot-toggler">
+        <i class="fa fa-comments"></i>
+        <i class="fa fa-times"></i>
+    </button>
+
+    <div class="chatbot-window">
+        <div class="chatbot-header">
+            <h2>Asisten Madrasah</h2>
+            <p>Tanyakan apa saja seputar sekolah!</p>
+            <span class="chatbot-close-btn fa fa-times"></span>
+        </div>
+        <ul class="chatbot-messages">
+            <li class="chat-message incoming">
+                <p>Assalamualaikum Warahmatullahi Wabarakatuh. Saya Asisten Virtual Al-Hidayah. Ada yang bisa saya
+                    bantu?</p>
+            </li>
+        </ul>
+        <div class="chatbot-suggestions">
+            <span class="suggestion-chip">Info Pendaftaran</span>
+            <span class="suggestion-chip">Biaya Sekolah</span>
+            <span class="suggestion-chip">Kurikulum</span>
+            <span class="suggestion-chip">Lokasi & Alamat</span>
+            <span class="suggestion-chip">Program Unggulan</span>
+            <span class="suggestion-chip">Kegiatan Ekskul</span>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Ketik pertanyaan Anda..." required>
+            <button id="send-chat-btn"><i class="fa fa-paper-plane"></i></button>
+        </div>
     </div>
 
     <button id="backToTopBtn" title="Kembali ke atas"><i class="fa fa-arrow-up"></i></button>
