@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             ekskul: {
                 keywords: ["ekskul", "ekstrakurikuler"],
-                answer: "Kami memiliki banyak ekstrakurikuler menarik seperti Pramuka, Tahfidz Al-Qur'an, dan Muhadhoroh (latihan pidato). Untuk info ekskul lainnya, silakan hubungi sekolah."
+                answer: "Kami memiliki banyak ekstrakurikuler menarik seperti Pramuka, Tahfidz Al-Qur'an, dan Muhadhoroh (latihan ceramah). Untuk info ekskul lainnya, silakan hubungi sekolah."
             },
             sapaan: {
                 keywords: ["assalamualaikum", "hai", "halo", "apa kabar"],
