@@ -1,7 +1,5 @@
-// Menunggu seluruh konten halaman dimuat sebelum menjalankan skrip
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Mendaftarkan plugin ScrollTrigger untuk GSAP
     gsap.registerPlugin(ScrollTrigger);
 
     // ======================================================
@@ -31,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // ======================================================
-    // ============ LOGIKA UNTUK ASISTEN CHATBOT ============
+    // ============ LOGIKA UNTUK AI ============
     // ======================================================
     if(chatbotToggler) { 
-        // --- "Database" Jawaban Sederhana ---
+        // --- "Database" Jawaban ---
         const responsesDB = {
             pendaftaran: {
                 keywords: ["pendaftaran", "pendaptaran", "daftar", "daptar", "psb", "murid baru"],
@@ -139,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // ======================================================
-    // ======== LOGIKA BARU UNTUK FORMULIR KE WHATSAPP ======
+    // ======== LOGIKA BARU BUAT FORMULIR KE WHATSAPP ======
     // ======================================================
     const contactForm = document.querySelector(".contact-form");
 
@@ -155,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const subjek = document.getElementById('subject').value;
             const pesan = document.getElementById('message').value;
 
-            // PERUBAHAN FINAL: Template pesan WhatsApp yang lebih natural
             const templatePesan = `Assalamualaikum.
             
 Saya *${nama}* (dengan email : ${email}), saya ingin bertanya terkait *"${subjek}"* untuk jenjang *${tujuan}*.
@@ -173,7 +170,7 @@ Mohon informasinya, terima kasih..`;
     }
     
     // ======================================================
-    // ============== FUNGSI UTILITAS LAINNYA ===============
+    // ============== FUNGSI UTILITAS ===============
     // ======================================================
     const openMenu = () => {
         navLinks.classList.add('active');
@@ -251,7 +248,7 @@ Mohon informasinya, terima kasih..`;
     }
 
     // ======================================================
-    // ================== ANIMASI GSAP ======================
+    // ================== GSAP ======================
     // ======================================================
     const mainTitle = document.querySelector('.text-box h1');
     if (mainTitle) {
